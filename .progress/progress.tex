@@ -21,6 +21,9 @@ This document tracks the progress of the Automated Linux System Provisioning pro
 \hline
 Step 1: PXE Boot Environment Setup & \\ \hline
 TFTP Server Setup & Description, issues encountered, solutions, etc. \\ \hline
+Initially, Arch Linux doesn't have TFTPD-HPA package, so I had to go searching for it.
+I eventually found it under  tftp-hpa not tftpd.
+I also needed to make sure inetutils, dnsmasq, and syslinux were installed for DHCP and pxelinux.0
 DHCP Server Setup & Description, issues encountered, solutions, etc. \\ \hline
 Bootloader Configuration & Description, issues encountered, solutions, etc. \\ \hline
 Testing PXE Boot & Description, issues encountered, solutions, etc. \\ \hline

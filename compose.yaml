@@ -1,0 +1,44 @@
+services:
+  dhcp:
+    build:
+      context: ./containers/dhcp
+    container_name: dhcp-server
+    cap_add:
+      - NET_ADMIN
+    networks:
+      pxe_net:
+        ipv4_address: 172.100.0.3
+  tftp:
+    build:
+      context: ./containers/tftp
+    container_name: tftp-server
+    networks:
+      pxe_net:
+        ipv4_address: 172.100.0.4
+  http:
+    image: nginx
+    container_name: http-server
+    volumes:
+      - ./data:/usr/share/nginx/html
+    networks:
+      pxe_net:
+        ipv4_address: 172.100.0.5
+  webui:
+    build:
+      context: ./containers/webui/
+    container_name: web-ui
+    ports:
+      - "8000:8000"
+    networks:
+      pxe_net:
+        ipv4_address: 172.100.0.6
+
+networks:
+  pxe_net:
+    driver: macvlan
+    driver_opts:
+      parent: enp14s0
+    ipam:
+      config:
+        - subnet: 172.100.0.0/24
+          gateway: 172.100.0.1
