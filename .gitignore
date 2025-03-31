@@ -6,3 +6,6 @@ __pycache__/
 *.swo
 .DS_Store
 .
+
+#Ignore bootfiles
+containers/tftp/bootfiles/*
