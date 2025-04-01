@@ -37,7 +37,7 @@ networks:
   pxe_net:
     driver: macvlan
     driver_opts:
-      parent: enp14s0
+      parent: br0
     ipam:
       config:
         - subnet: 172.100.0.0/24

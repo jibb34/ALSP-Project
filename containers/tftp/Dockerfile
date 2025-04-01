@@ -2,7 +2,7 @@
 FROM ubuntu:latest
 
 # Install TFTP server
-RUN apt-get update && apt-get install -y tftpd-hpa
+RUN apt-get update && apt-get install -y tftpd-hpa net-tools
 
 # Create TFTP root directory
 RUN mkdir -p /srv/tftp
@@ -17,5 +17,5 @@ COPY bootfiles/ /srv/tftp/
 EXPOSE 69/udp
 
 # Run TFTP server
-CMD ["/usr/sbin/in.tftpd", "--foreground", "--secure", "/srv/tftp"]
+CMD ["/usr/sbin/in.tftpd", "--foreground", "--secure", "--verbose", "/srv/tftp"]
 
