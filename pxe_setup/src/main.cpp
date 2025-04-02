@@ -23,7 +23,7 @@ int main(int argc, char *argv[]) {
       return 1;
     }
   }
-
+  std::cout << "Hello world" << std::endl;
   // Main program logic goes here
   // *********************************************
   /* TODO: Implement sequential calls to each function.
