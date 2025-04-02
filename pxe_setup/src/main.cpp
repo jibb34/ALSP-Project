@@ -1,4 +1,5 @@
 // main.cpp
+#include "SyslinuxSetup.hpp"
 #include <iostream>
 #include <string>
 
@@ -24,6 +25,13 @@ int main(int argc, char *argv[]) {
     }
   }
   std::cout << "Hello world" << std::endl;
+  SyslinuxSetup setup;
+  std::string srcListFile =
+      "/home/jackjibb/Auto-Linux_System_Provisioning/config/syslinux.txt";
+  std::string outputDir = "/home/jackjibb/Auto-Linux_System_Provisioning";
+
+  bool ok = setup.copySyslinuxBootFiles(srcListFile, outputDir);
+
   // Main program logic goes here
   // *********************************************
   /* TODO: Implement sequential calls to each function.

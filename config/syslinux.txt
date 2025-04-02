@@ -1,0 +1,8 @@
+#This file lists all essential syslinux modules required for pxe boot menu.
+
+#List of files:
+/usr/lib/syslinux/bios/pxelinux.0
+/usr/lib/syslinux/bios/ldlinux.c32
+/usr/lib/syslinux/bios/menu.c32
+/usr/lib/syslinux/bios/libcom32.c32
+/usr/lib/syslinux/bios/libutil.c32
