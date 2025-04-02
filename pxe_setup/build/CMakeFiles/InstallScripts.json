@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/jackjibb/Auto-Linux_System_Provisioning/pxe_setup/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

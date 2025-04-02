@@ -1,0 +1,50 @@
+[
+{
+  "directory": "/home/jackjibb/Auto-Linux_System_Provisioning/pxe_setup/build",
+  "command": "/usr/bin/c++  -I/home/jackjibb/Auto-Linux_System_Provisioning/pxe_setup/include -std=gnu++17 -o CMakeFiles/pxe_setup.dir/src/ConfigLoader.cpp.o -c /home/jackjibb/Auto-Linux_System_Provisioning/pxe_setup/src/ConfigLoader.cpp",
+  "file": "/home/jackjibb/Auto-Linux_System_Provisioning/pxe_setup/src/ConfigLoader.cpp",
+  "output": "CMakeFiles/pxe_setup.dir/src/ConfigLoader.cpp.o"
+},
+{
+  "directory": "/home/jackjibb/Auto-Linux_System_Provisioning/pxe_setup/build",
+  "command": "/usr/bin/c++  -I/home/jackjibb/Auto-Linux_System_Provisioning/pxe_setup/include -std=gnu++17 -o CMakeFiles/pxe_setup.dir/src/ExtractArch.cpp.o -c /home/jackjibb/Auto-Linux_System_Provisioning/pxe_setup/src/ExtractArch.cpp",
+  "file": "/home/jackjibb/Auto-Linux_System_Provisioning/pxe_setup/src/ExtractArch.cpp",
+  "output": "CMakeFiles/pxe_setup.dir/src/ExtractArch.cpp.o"
+},
+{
+  "directory": "/home/jackjibb/Auto-Linux_System_Provisioning/pxe_setup/build",
+  "command": "/usr/bin/c++  -I/home/jackjibb/Auto-Linux_System_Provisioning/pxe_setup/include -std=gnu++17 -o CMakeFiles/pxe_setup.dir/src/ExtractRocky.cpp.o -c /home/jackjibb/Auto-Linux_System_Provisioning/pxe_setup/src/ExtractRocky.cpp",
+  "file": "/home/jackjibb/Auto-Linux_System_Provisioning/pxe_setup/src/ExtractRocky.cpp",
+  "output": "CMakeFiles/pxe_setup.dir/src/ExtractRocky.cpp.o"
+},
+{
+  "directory": "/home/jackjibb/Auto-Linux_System_Provisioning/pxe_setup/build",
+  "command": "/usr/bin/c++  -I/home/jackjibb/Auto-Linux_System_Provisioning/pxe_setup/include -std=gnu++17 -o CMakeFiles/pxe_setup.dir/src/ExtractUbuntu.cpp.o -c /home/jackjibb/Auto-Linux_System_Provisioning/pxe_setup/src/ExtractUbuntu.cpp",
+  "file": "/home/jackjibb/Auto-Linux_System_Provisioning/pxe_setup/src/ExtractUbuntu.cpp",
+  "output": "CMakeFiles/pxe_setup.dir/src/ExtractUbuntu.cpp.o"
+},
+{
+  "directory": "/home/jackjibb/Auto-Linux_System_Provisioning/pxe_setup/build",
+  "command": "/usr/bin/c++  -I/home/jackjibb/Auto-Linux_System_Provisioning/pxe_setup/include -std=gnu++17 -o CMakeFiles/pxe_setup.dir/src/IsoManager.cpp.o -c /home/jackjibb/Auto-Linux_System_Provisioning/pxe_setup/src/IsoManager.cpp",
+  "file": "/home/jackjibb/Auto-Linux_System_Provisioning/pxe_setup/src/IsoManager.cpp",
+  "output": "CMakeFiles/pxe_setup.dir/src/IsoManager.cpp.o"
+},
+{
+  "directory": "/home/jackjibb/Auto-Linux_System_Provisioning/pxe_setup/build",
+  "command": "/usr/bin/c++  -I/home/jackjibb/Auto-Linux_System_Provisioning/pxe_setup/include -std=gnu++17 -o CMakeFiles/pxe_setup.dir/src/PxelinuxConfigGenerator.cpp.o -c /home/jackjibb/Auto-Linux_System_Provisioning/pxe_setup/src/PxelinuxConfigGenerator.cpp",
+  "file": "/home/jackjibb/Auto-Linux_System_Provisioning/pxe_setup/src/PxelinuxConfigGenerator.cpp",
+  "output": "CMakeFiles/pxe_setup.dir/src/PxelinuxConfigGenerator.cpp.o"
+},
+{
+  "directory": "/home/jackjibb/Auto-Linux_System_Provisioning/pxe_setup/build",
+  "command": "/usr/bin/c++  -I/home/jackjibb/Auto-Linux_System_Provisioning/pxe_setup/include -std=gnu++17 -o CMakeFiles/pxe_setup.dir/src/SyslinuxSetup.cpp.o -c /home/jackjibb/Auto-Linux_System_Provisioning/pxe_setup/src/SyslinuxSetup.cpp",
+  "file": "/home/jackjibb/Auto-Linux_System_Provisioning/pxe_setup/src/SyslinuxSetup.cpp",
+  "output": "CMakeFiles/pxe_setup.dir/src/SyslinuxSetup.cpp.o"
+},
+{
+  "directory": "/home/jackjibb/Auto-Linux_System_Provisioning/pxe_setup/build",
+  "command": "/usr/bin/c++  -I/home/jackjibb/Auto-Linux_System_Provisioning/pxe_setup/include -std=gnu++17 -o CMakeFiles/pxe_setup.dir/src/main.cpp.o -c /home/jackjibb/Auto-Linux_System_Provisioning/pxe_setup/src/main.cpp",
+  "file": "/home/jackjibb/Auto-Linux_System_Provisioning/pxe_setup/src/main.cpp",
+  "output": "CMakeFiles/pxe_setup.dir/src/main.cpp.o"
+}
+]
