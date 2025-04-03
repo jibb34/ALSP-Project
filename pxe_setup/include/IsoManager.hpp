@@ -11,4 +11,8 @@ public:
   bool checkAndDownloadIso(const ConfigLoader &config,
                            const std::string &section,
                            const std::string &isoDir);
+
+private:
+  // set the download as a background process
+  bool forkDownloadIso(const std::string &cmd);
 };

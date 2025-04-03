@@ -1,5 +1,8 @@
 // main.cpp
+#include "ConfigLoader.hpp"
+#include "IsoManager.hpp"
 #include "SyslinuxSetup.hpp"
+#include <chrono>
 #include <iostream>
 #include <string>
 
@@ -26,11 +29,35 @@ int main(int argc, char *argv[]) {
   }
   std::cout << "Hello world" << std::endl;
   SyslinuxSetup setup;
+  ConfigLoader cl;
   std::string srcListFile =
       "/home/jackjibb/Auto-Linux_System_Provisioning/config/syslinux.txt";
   std::string outputDir = "/home/jackjibb/Auto-Linux_System_Provisioning";
+  std::string configFile =
+      "/home/jackjibb/Auto-Linux_System_Provisioning/config/bootfiles.conf";
 
-  bool ok = setup.copySyslinuxBootFiles(srcListFile, outputDir);
+  // bool ok = setup.copySyslinuxBootFiles(srcListFile, outputDir);
+  // test config works ok
+  bool okConfig = cl.loadConfig(configFile);
+  if (!okConfig) {
+    std::cerr << "[Main] Error Loading Configuration File\n";
+    return 1;
+  }
+  // test individual value
+  std::cout << cl.getValue("arch", "iso_name") << std::endl;
+  // test array
+  std::vector<std::string> valueVector =
+      cl.getArrayValue("rocky", "archives_needed");
+
+  for (const auto &val : valueVector) {
+    std::cout << val << std::endl;
+  }
+  // test iso download
+  IsoManager manager;
+  std::string section;
+  bool ok;
+  std::string isoDir = "/home/jackjibb/Auto-Linux_System_Provisioning/iso";
+  manager.checkAndDownloadIso(cl, "rocky", isoDir);
 
   // Main program logic goes here
   // *********************************************

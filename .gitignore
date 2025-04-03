@@ -10,3 +10,4 @@ __pycache__/
 #Ignore bootfiles
 containers/tftp/bootfiles/*
 ./qemu-*
+iso/

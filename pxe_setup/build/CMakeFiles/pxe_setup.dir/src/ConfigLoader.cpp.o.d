@@ -110,8 +110,13 @@ CMakeFiles/pxe_setup.dir/src/ConfigLoader.cpp.o: \
  /usr/include/bits/types/error_t.h \
  /usr/include/c++/14.2.1/bits/charconv.h \
  /usr/include/c++/14.2.1/bits/basic_string.tcc \
- /usr/include/c++/14.2.1/fstream /usr/include/c++/14.2.1/istream \
- /usr/include/c++/14.2.1/ios /usr/include/c++/14.2.1/exception \
+ /usr/include/c++/14.2.1/vector \
+ /usr/include/c++/14.2.1/bits/stl_uninitialized.h \
+ /usr/include/c++/14.2.1/bits/stl_vector.h \
+ /usr/include/c++/14.2.1/bits/stl_bvector.h \
+ /usr/include/c++/14.2.1/bits/vector.tcc /usr/include/c++/14.2.1/fstream \
+ /usr/include/c++/14.2.1/istream /usr/include/c++/14.2.1/ios \
+ /usr/include/c++/14.2.1/exception \
  /usr/include/c++/14.2.1/bits/exception_ptr.h \
  /usr/include/c++/14.2.1/bits/cxxabi_init_exception.h \
  /usr/include/c++/14.2.1/typeinfo \
